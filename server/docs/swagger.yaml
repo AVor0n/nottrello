@@ -337,7 +337,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить список всех досок
       tags:
-      - Доски
+      - Boards
   /boards/{boardId}:
     get:
       consumes:
@@ -372,7 +372,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить задачи доски
       tags:
-      - Доски
+      - Boards
   /tasks:
     get:
       consumes:
@@ -394,7 +394,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить список всех задач
       tags:
-      - Задачи
+      - Issues
   /tasks/{taskId}:
     get:
       consumes:
@@ -424,7 +424,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить задачу по ID
       tags:
-      - Задачи
+      - Issues
   /tasks/create:
     post:
       consumes:
@@ -458,7 +458,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Создать новую задачу
       tags:
-      - Задачи
+      - Issues
   /tasks/update/{taskId}:
     put:
       consumes:
@@ -497,7 +497,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Обновить задачу
       tags:
-      - Задачи
+      - Issues
   /tasks/updateStatus/{taskId}:
     put:
       consumes:
@@ -536,7 +536,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Обновить статус задачи
       tags:
-      - Задачи
+      - Issues
   /teams:
     get:
       consumes:
@@ -558,7 +558,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить информацию о всех командах
       tags:
-      - Команды
+      - Teams
   /teams/{teamId}:
     get:
       consumes:
@@ -587,7 +587,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить информацию о команде
       tags:
-      - ""
+      - Teams
   /users:
     get:
       consumes:
@@ -609,7 +609,7 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить информацию о всех пользователях
       tags:
-      - Пользователи
+      - Users
   /users/{id}/tasks:
     get:
       consumes:
@@ -640,5 +640,5 @@ paths:
             $ref: '#/definitions/errs.ErrorResponse'
       summary: Получить задачи пользователя
       tags:
-      - Пользователи
+      - Users
 swagger: "2.0"

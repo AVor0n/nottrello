@@ -1,15 +1,15 @@
 import eslint from '@eslint/js';
-import eslintConfigPrettier from "eslint-config-prettier/flat";
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import eslintPluginImportX from 'eslint-plugin-import-x';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
-import globals from 'globals'
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 const config = [
   {
-    ignores: ['dist', '__generated__.ts', 'eslint.config.js', '.stylelintrc.cjs', '.lintstagedrc.js'],
+    ignores: ['dist', '**/__generated__.ts', 'eslint.config.js', '.stylelintrc.cjs', '.lintstagedrc.js', 'scripts'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -42,7 +42,7 @@ const config = [
       '@typescript-eslint': tseslint.plugin,
       'react-refresh': reactRefresh,
       'react-hooks': reactHooks,
-      'react': react,
+      react: react,
       'import-x': eslintPluginImportX,
     },
     rules: {
@@ -79,7 +79,7 @@ const config = [
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-non-null-assertion': 'warn',
       '@typescript-eslint/no-empty-interface': 'off',
-      "@typescript-eslint/restrict-template-expressions": ['error', { allowNumber: true }],
+      '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
       '@typescript-eslint/no-floating-promises': 'off',
       '@typescript-eslint/consistent-type-imports': ['warn', { fixStyle: 'inline-type-imports' }],
       '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
