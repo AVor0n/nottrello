@@ -1,5 +1,5 @@
 # Этап сборки
-FROM golang:1.24.1-alpine AS builder
+FROM golang:1.24.2-alpine AS builder
 
 # Установка необходимых инструментов и зависимостей для SQLite
 RUN apk add --no-cache git gcc musl-dev sqlite-dev
