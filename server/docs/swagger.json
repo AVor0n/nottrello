@@ -19,7 +19,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Доски"
+                    "Boards"
                 ],
                 "summary": "Получить список всех досок",
                 "responses": {
@@ -51,7 +51,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Доски"
+                    "Boards"
                 ],
                 "summary": "Получить задачи доски",
                 "parameters": [
@@ -104,7 +104,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Получить список всех задач",
                 "responses": {
@@ -136,7 +136,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Создать новую задачу",
                 "parameters": [
@@ -188,7 +188,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Обновить задачу",
                 "parameters": [
@@ -247,7 +247,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Обновить статус задачи",
                 "parameters": [
@@ -306,7 +306,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Получить задачу по ID",
                 "parameters": [
@@ -350,7 +350,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Команды"
+                    "Teams"
                 ],
                 "summary": "Получить информацию о всех командах",
                 "responses": {
@@ -382,7 +382,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    ""
+                    "Teams"
                 ],
                 "summary": "Получить информацию о команде",
                 "parameters": [
@@ -426,7 +426,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Пользователи"
+                    "Users"
                 ],
                 "summary": "Получить информацию о всех пользователях",
                 "responses": {
@@ -458,7 +458,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Пользователи"
+                    "Users"
                 ],
                 "summary": "Получить задачи пользователя",
                 "parameters": [

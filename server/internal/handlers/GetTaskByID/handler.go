@@ -26,7 +26,7 @@ func NewGetTaskByIDHandler(db *gorm.DB) Handler {
 // GetTaskByID возвращает задачу по ID
 // @Summary Получить задачу по ID
 // @Description Возвращает полную информацию о задаче, включая данные исполнителя и доски
-// @Tags Задачи
+// @Tags Issues
 // @Accept json
 // @Produce json
 // @Param taskId path int true "ID задачи"

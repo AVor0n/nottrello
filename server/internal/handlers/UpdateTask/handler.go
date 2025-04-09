@@ -26,7 +26,7 @@ func NewUpdateTaskHandler(db *gorm.DB) Handler {
 
 // @Summary Обновить задачу
 // @Description Обновляет задачу по указанному ID
-// @Tags Задачи
+// @Tags Issues
 // @Accept json
 // @Produce json
 // @Param taskId path int true "ID задачи"

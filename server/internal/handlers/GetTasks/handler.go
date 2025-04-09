@@ -24,7 +24,7 @@ func NewGetTasksHandler(db *gorm.DB) Handler {
 // GetTasks возвращает список всех задач
 // @Summary Получить список всех задач
 // @Description Возвращает массив задач с полной информацией, включая данные исполнителей и досок
-// @Tags Задачи
+// @Tags Issues
 // @Accept json
 // @Produce json
 // @Success 200 {array} models.GetTasksResponse

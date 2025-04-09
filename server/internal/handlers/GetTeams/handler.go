@@ -23,7 +23,7 @@ func NewGetTeamsHandler(db *gorm.DB) Handler {
 
 // @Summary Получить информацию о всех командах
 // @Description Получает информацию о всех командах, включая количество пользователей и досок
-// @Tags Команды
+// @Tags Teams
 // @Accept json
 // @Produce json
 // @Success 200 {array} models.GetTeamsResponse

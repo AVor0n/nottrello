@@ -26,7 +26,7 @@ func NewGetTasksOnBoardHandler(db *gorm.DB) Handler {
 // GetTasksOnBoard возвращает список задач для конкретной доски
 // @Summary Получить задачи доски
 // @Description Возвращает все задачи, принадлежащие указанной доске
-// @Tags Доски
+// @Tags Boards
 // @Accept json
 // @Produce json
 // @Param boardId path int true "ID доски"

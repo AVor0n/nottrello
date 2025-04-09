@@ -26,7 +26,7 @@ func NewUpdateTaskStatusHandler(db *gorm.DB) Handler {
 
 // @Summary Обновить статус задачи
 // @Description Обновляет статус задачи по указанному ID
-// @Tags Задачи
+// @Tags Issues
 // @Accept json
 // @Produce json
 // @Param taskId path int true "ID задачи"

@@ -25,7 +25,7 @@ func NewGetTeamHandler(db *gorm.DB) Handler {
 
 // @Summary Получить информацию о команде
 // @Description Получает информацию о команде по ID, включая пользователей и доски
-// @Tags 	
+// @Tags Teams
 // @Accept json
 // @Produce json
 // @Param teamId path int true "ID команды"

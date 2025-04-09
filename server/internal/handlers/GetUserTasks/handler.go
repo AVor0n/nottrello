@@ -25,7 +25,7 @@ func NewGetUserTasksHandler(db *gorm.DB) Handler {
 
 // @Summary Получить задачи пользователя
 // @Description Получает список задач для указанного пользователя по его ID
-// @Tags Пользователи
+// @Tags Users
 // @Accept json
 // @Produce json
 // @Param id path int true "ID пользователя"

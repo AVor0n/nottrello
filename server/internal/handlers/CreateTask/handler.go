@@ -31,7 +31,7 @@ func NewCreateTaskHandler(db DBInterface) Handler {
 // CreateTask обрабатывает запрос на создание новой задачи
 // @Summary Создать новую задачу
 // @Description Создает новую задачу с указанными параметрами
-// @Tags Задачи
+// @Tags Issues
 // @Accept  json
 // @Produce  json
 // @Param input body models.CreateTaskRequest true "Данные для создания задачи"

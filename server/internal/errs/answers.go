@@ -7,24 +7,24 @@ import (
 )
 
 type ErrorResponse struct {
-	Error   string `json:"error"`             
-	Message string `json:"message,omitempty"` 
+	Error   string `json:"error"`
+	Message string `json:"message,omitempty"`
 }
 
 type SuccessResponse struct {
-	Data    interface{} `json:"data"`          
-	Message string      `json:"message,omitempty"` 
+	Data    interface{} `json:"data"`
+	Message string      `json:"message,omitempty"`
 }
 
 func RespondWithError(c *gin.Context, statusCode int, err error, message ...string) {
 	response := ErrorResponse{
 		Error: err.Error(),
 	}
-	
+
 	if len(message) > 0 {
 		response.Message = message[0]
 	}
-	
+
 	c.JSON(statusCode, response)
 }
 
@@ -49,13 +49,5 @@ func Forbidden(c *gin.Context, err error, message ...string) {
 }
 
 func Success(c *gin.Context, data interface{}, message ...string) {
-	response := SuccessResponse{
-		Data: data,
-	}
-	
-	if len(message) > 0 {
-		response.Message = message[0]
-	}
-	
-	c.JSON(http.StatusOK, response)
+	c.JSON(http.StatusOK, data)
 }

@@ -25,7 +25,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Доски"
+                    "Boards"
                 ],
                 "summary": "Получить список всех досок",
                 "responses": {
@@ -57,7 +57,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Доски"
+                    "Boards"
                 ],
                 "summary": "Получить задачи доски",
                 "parameters": [
@@ -110,7 +110,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Получить список всех задач",
                 "responses": {
@@ -142,7 +142,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Создать новую задачу",
                 "parameters": [
@@ -194,7 +194,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Обновить задачу",
                 "parameters": [
@@ -253,7 +253,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Обновить статус задачи",
                 "parameters": [
@@ -312,7 +312,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Задачи"
+                    "Issues"
                 ],
                 "summary": "Получить задачу по ID",
                 "parameters": [
@@ -356,7 +356,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Команды"
+                    "Teams"
                 ],
                 "summary": "Получить информацию о всех командах",
                 "responses": {
@@ -388,7 +388,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    ""
+                    "Teams"
                 ],
                 "summary": "Получить информацию о команде",
                 "parameters": [
@@ -432,7 +432,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Пользователи"
+                    "Users"
                 ],
                 "summary": "Получить информацию о всех пользователях",
                 "responses": {
@@ -464,7 +464,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Пользователи"
+                    "Users"
                 ],
                 "summary": "Получить задачи пользователя",
                 "parameters": [

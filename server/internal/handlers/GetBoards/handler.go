@@ -25,7 +25,7 @@ func NewGetBoardsHandler(db *gorm.DB) Handler {
 // GetBoards обрабатывает запрос на получение списка досок
 // @Summary Получить список всех досок
 // @Description Возвращает массив досок с основной информацией и количеством задач в каждой
-// @Tags Доски
+// @Tags Boards
 // @Accept json
 // @Produce json
 // @Success 200 {array} models.GetBoardsResponse "Успешный ответ со списком досок"

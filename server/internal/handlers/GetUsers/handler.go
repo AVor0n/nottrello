@@ -23,7 +23,7 @@ func NewGetUsersHandler(db *gorm.DB) Handler {
 
 // @Summary Получить информацию о всех пользователях
 // @Description Получает информацию о всех пользователях, включая их команды и количество задач
-// @Tags Пользователи
+// @Tags Users
 // @Accept json
 // @Produce json
 // @Success 200 {array} models.GetUsersResponse

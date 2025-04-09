@@ -17,7 +17,9 @@ export default defineConfig(() => {
       port,
       strictPort: true,
       proxy: {
-        '/api': { target: `http://localhost:${serverPort}` },
+        '/api/v1': {
+          target: `http://localhost:${serverPort}`,
+        },
       },
     },
     plugins: [
