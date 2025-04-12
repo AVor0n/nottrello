@@ -1,37 +1,8 @@
 @import './base.css';
 
 #app {
-  max-inline-size: 1280px;
+  inline-size: 100%;
   margin-block: 0;
   margin-inline: auto;
-  padding: 2rem;
   font-weight: normal;
-}
-
-a,
-.green {
-  padding: 3px;
-  color: hsla(160, 100%, 37%, 1);
-  text-decoration: none;
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-block: 0;
-    padding-inline: 2rem;
-  }
 }
