@@ -23,10 +23,17 @@ const injectedRtkApi = api
         providesTags: ['Issues'],
       }),
       postTasksCreate: build.mutation<PostTasksCreateApiResponse, PostTasksCreateApiArg>({
-        query: queryArg => ({ url: `/tasks/create`, method: 'POST', body: queryArg.modelsCreateTaskRequest }),
+        query: queryArg => ({
+          url: `/tasks/create`,
+          method: 'POST',
+          body: queryArg.modelsCreateTaskRequest,
+        }),
         invalidatesTags: ['Issues'],
       }),
-      putTasksUpdateByTaskId: build.mutation<PutTasksUpdateByTaskIdApiResponse, PutTasksUpdateByTaskIdApiArg>({
+      putTasksUpdateByTaskId: build.mutation<
+        PutTasksUpdateByTaskIdApiResponse,
+        PutTasksUpdateByTaskIdApiArg
+      >({
         query: queryArg => ({
           url: `/tasks/update/${queryArg.taskId}`,
           method: 'PUT',
@@ -65,7 +72,8 @@ const injectedRtkApi = api
     overrideExisting: false,
   });
 export { injectedRtkApi as enhancedApi };
-export type GetBoardsApiResponse = /** status 200 Успешный ответ со списком досок */ ModelsGetBoardsResponse[];
+export type GetBoardsApiResponse =
+  /** status 200 Успешный ответ со списком досок */ ModelsGetBoardsResponse[];
 export type GetBoardsApiArg = void;
 export type GetBoardsByBoardIdApiResponse = /** status 200 OK */ ModelsGetTasksOnBoardResponse[];
 export type GetBoardsByBoardIdApiArg = {
@@ -79,7 +87,8 @@ export type GetTasksByTaskIdApiArg = {
   /** ID задачи */
   taskId: number;
 };
-export type PostTasksCreateApiResponse = /** status 201 Задача успешно создана */ ModelsCreateTaskResponse;
+export type PostTasksCreateApiResponse =
+  /** status 201 Задача успешно создана */ ModelsCreateTaskResponse;
 export type PostTasksCreateApiArg = {
   /** Данные для создания задачи */
   modelsCreateTaskRequest: ModelsCreateTaskRequest;
@@ -91,7 +100,8 @@ export type PutTasksUpdateByTaskIdApiArg = {
   /** Данные для обновления задачи */
   modelsUpdateTaskRequest: ModelsUpdateTaskRequest;
 };
-export type PutTasksUpdateStatusByTaskIdApiResponse = /** status 200 OK */ ModelsUpdateTaskStatusResponse;
+export type PutTasksUpdateStatusByTaskIdApiResponse =
+  /** status 200 OK */ ModelsUpdateTaskStatusResponse;
 export type PutTasksUpdateStatusByTaskIdApiArg = {
   /** ID задачи */
   taskId: number;

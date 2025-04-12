@@ -10,4 +10,6 @@ const store = configureStore({
   middleware: getDefaultMiddleware => getDefaultMiddleware().concat(api.middleware),
 });
 
-export const StoreProvider = ({ children }: PropsWithChildren) => <Provider store={store}>{children}</Provider>;
+export const StoreProvider = ({ children }: PropsWithChildren) => (
+  <Provider store={store}>{children}</Provider>
+);

@@ -9,7 +9,14 @@ import tseslint from 'typescript-eslint';
 
 const config = [
   {
-    ignores: ['dist', '**/__generated__.ts', 'eslint.config.js', '.stylelintrc.cjs', '.lintstagedrc.js', 'scripts'],
+    ignores: [
+      'dist',
+      '**/__generated__.ts',
+      'eslint.config.js',
+      '.stylelintrc.cjs',
+      '.lintstagedrc.js',
+      'scripts',
+    ],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -49,7 +56,6 @@ const config = [
       ...reactHooks.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
-      'arrow-body-style': ['error', 'as-needed'],
       'no-use-before-define': 'off',
       'no-restricted-syntax': 'off',
       'class-methods-use-this': 'off',
@@ -98,7 +104,16 @@ const config = [
       'import-x/order': [
         'error',
         {
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type', 'object'],
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+            'type',
+            'object',
+          ],
           'newlines-between': 'never',
           alphabetize: {
             order: 'asc',

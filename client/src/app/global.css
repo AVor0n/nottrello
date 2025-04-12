@@ -6,8 +6,8 @@
 .g-root_theme_light {
   --g-font-family-sans: 'Titillium Web', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --g-font-family-monospace:
-    'Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New',
-    'Courier', monospace;
+    'Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono', 'Liberation Mono',
+    'DejaVu Sans Mono', 'Courier New', 'Courier', monospace;
   --g-color-private-brand-50: rgb(203 255 92 / 10%);
   --g-color-private-brand-100: rgb(203 255 92 / 15%);
   --g-color-private-brand-150: rgb(203 255 92 / 20%);
@@ -56,8 +56,8 @@
 .g-root_theme_dark {
   --g-font-family-sans: 'Titillium Web', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --g-font-family-monospace:
-    'Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono', 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New',
-    'Courier', monospace;
+    'Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono', 'Liberation Mono',
+    'DejaVu Sans Mono', 'Courier New', 'Courier', monospace;
   --g-color-private-brand-50: rgb(203 255 92 / 10%);
   --g-color-private-brand-100: rgb(203 255 92 / 15%);
   --g-color-private-brand-150: rgb(203 255 92 / 20%);
