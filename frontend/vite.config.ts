@@ -4,8 +4,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import dotenv from 'dotenv'
 import { defineConfig } from 'vite'
 import checker from 'vite-plugin-checker'
-import vueDevTools from 'vite-plugin-vue-devtools'
-import typescriptPaths from 'vite-tsconfig-paths'
+import vueDevTools from 'vite-plugin-vue-devtools';
 
 dotenv.config({ path: resolve(process.cwd(), '../.env') })
 const port = +(process.env.FRONT_PORT || 3000)
@@ -26,10 +25,14 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
-    typescriptPaths(),
     checker({
       overlay: false,
       typescript: true,
     }),
   ],
-})
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+    },
+  },
+});
