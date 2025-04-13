@@ -40,20 +40,20 @@ const classes = computed(() => {
   const [lPin, rPin] = props.pin.split('-');
   return {
     [styles.button]: true,
-    [styles[`button--${props.size}`]]: true,
-    [styles[`button--${props.view}`]]: true,
-    [styles[`button--l_${lPin}`]]: true,
-    [styles[`button--r_${rPin}`]]: true,
-    [styles[`button--${props.width}`]]: props.width,
-    [styles.buttonSelected]: props.selected,
-    [styles.buttonDisabled]: props.disabled,
-    [styles.buttonLoading]: props.loading,
+    [styles[props.size]]: true,
+    [styles[props.view]]: true,
+    [styles[`l_${lPin}`]]: true,
+    [styles[`r_${rPin}`]]: true,
+    [styles[`${props.width}`]]: props.width,
+    [styles.selected]: props.selected,
+    [styles.disabled]: props.disabled,
+    [styles.loading]: props.loading,
   };
 });
 </script>
 
 <template>
-  <button :class="classes" v-bind="$attrs" :disabled="disabled || loading">
+  <button :class="classes" v-bind="$attrs" :disabled="disabled || loading" :data-qa="qa">
     <slot></slot>
   </button>
 </template>
