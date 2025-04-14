@@ -14,7 +14,7 @@
     "lint": "stylelint **/*.{vue,css} --fix",
     "format": "prettier --write src/",
     "generate-api": "npx @rtk-query/codegen-openapi ./scripts/openapi-config.cjs",
-    "prepare": "cd .. && husky client/.husky || true",
+    "prepare": "cd .. && husky frontend/.husky || true",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
