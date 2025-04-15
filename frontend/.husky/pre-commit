@@ -1,2 +1,2 @@
-cd client
-npx lint-staged --relative client
+cd frontend
+npx lint-staged --relative frontend
